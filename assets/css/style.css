@@ -1,0 +1,90 @@
+.jumbotron{                         /* to style the title*/    
+    border: dashed 10px #7ea88f;    
+    text-align: center;
+    color: #7ea88f;
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right:20%;  
+    margin-bottom: 0;  
+    padding: 15px;
+    font-family: 'Josefin Sans', sans-serif;   
+}
+
+body {                              /* to style the body with back ground image*/
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #04893a;
+    
+}
+
+.row{                               /* to style the rows for content*/
+    background-color: white;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 20%;
+    margin-right:20%;
+    margin-bottom: 0;
+    padding: 15px;
+    border: solid 3px #7ea88f;
+    font-size: 25px;
+}
+
+img{                              /* style for trivia images */
+    height: 100px;
+    width: auto;
+    transition: all 5s ease-in-out;    
+} 
+
+/* img:hover{                        /* crystal hover style */
+    transform: rotate(360deg);  
+}  */
+
+/* button {                        /* crystal style */
+    display: inline-block;
+    border: none;   
+    background: #fff;
+    color: #fff;  
+} */
+
+/* button:focus {                 /* crystal style */
+    outline: 1px solid #fff;   
+} */
+
+/* button:active {                /* crystal click */
+    transform: scale(0.75);
+} */
+
+/* #endScreen{                    /* for end screen styles */
+    position: absolute;
+    z-index: 101;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(181,22,186,0.7);
+    margin-left: 300px;    
+} */
+
+/* #endScreenContent{             /* end screen content style */
+    width: 400px;
+    height: 200px;
+    padding: 20px;    
+    margin: 60px;
+    text-align: center;
+} */
+
+/* #endScreen h2{                /* end screen top text */
+    color: white;
+    font-size: 28px;
+} */
+
+/* #endScreen h3{                 /* end screen bottom text */
+    color: white;
+    font-size: 22px;
+} */
+
+/* #btnReplay{                    /* replay button styles */
+    display: inline-block;
+    border: none;       
+    background-color: #791099;  
+    color: white;
+}  */
