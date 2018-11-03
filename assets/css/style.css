@@ -1,90 +1,132 @@
-.jumbotron{                         /* to style the title*/    
-    border: dashed 10px #7ea88f;    
+body {
+    background-image: url('../images/question.gif');    
+    font-family: 'Anton', sans-serif;
+    color: black;
+    letter-spacing: 2px;
+}
+
+img{
+    width: 450px;
+    height: auto;
+   margin-left: -20px;
+}
+
+#startScreen {
+    background-color: #c6efc9;        
+    width: 35%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.start {
+    margin: 0 auto;
     text-align: center;
-    color: #7ea88f;
+    padding: 4%;
+    margin-top: 40%;
+    border-style: ridge;
+    border-width: 15px;
+    border-color: rgb(3, 138, 10);
+}
+
+.wrongBox {
+    margin: 0 auto;
+    text-align: center;
+    padding: 2%;    
+}
+
+#answerScreen {
+    display: none;
+    background-color: #c6efc9;        
+    width: 40%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    text-align: center;
+    font-size: 21px;
+    border-style: ridge;
+    border-width: 15px;
+    border-color: rgb(3, 138, 10);
+}
+
+#timesUp {
+    display: none;
+    background-color: #c6efc9;         
+    width: 35%;
+    margin: 0 auto;
+    padding: 2%;
+    margin-top: 15%;
+    font-size: 21px;
+    border-style: ridge;
+    border-width: 15px;
+    border-color: rgb(3, 138, 10);
+}
+
+.up {
+    color: #000;
+    font-style: italic;
+    text-align: center;
+}
+
+.timeRemain {
+    padding: 2%;
+    color: #000;
+}
+
+#timeRemain {
+    font-size: 60px;
+}
+
+.container {
+    background-color: #c6efc9;     
+    height: 100%;
+    text-align: center;
+    display: none;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.questions {
+    font-size: 25px;    
+}
+
+label {
+    color: #06a812;
+}
+
+.ques,
+label {
+    padding: 10px;
+}
+
+header {
+    font-size: 60px;
+    color: rgb(10, 136, 88);
     margin-top: 2%;
-    margin-left: 20%;
-    margin-right:20%;  
-    margin-bottom: 0;  
-    padding: 15px;
-    font-family: 'Josefin Sans', sans-serif;   
 }
 
-body {                              /* to style the body with back ground image*/
-    font-family: 'Source Code Pro', monospace;
+.buttonSubmit{    
+    background-color: #4CAF50;
+    border-radius: 40%;
+    border: none;
     font-size: 15px;
-    font-weight: bold;
-    background-color: #04893a;
-    
+    color: #FFFFFF;
+    padding: 10px;
+    width: 70px;
+    text-align: center;        
+    text-decoration: none;      
 }
 
-.row{                               /* to style the rows for content*/
-    background-color: white;
-    text-align: center;
-    margin-top: 0;
-    margin-left: 20%;
-    margin-right:20%;
-    margin-bottom: 0;
-    padding: 15px;
-    border: solid 3px #7ea88f;
-    font-size: 25px;
+.buttonSubmit:hover{
+    background-color: #075906;
 }
 
-img{                              /* style for trivia images */
-    height: 100px;
-    width: auto;
-    transition: all 5s ease-in-out;    
-} 
-
-/* img:hover{                        /* crystal hover style */
-    transform: rotate(360deg);  
-}  */
-
-/* button {                        /* crystal style */
-    display: inline-block;
-    border: none;   
-    background: #fff;
-    color: #fff;  
-} */
-
-/* button:focus {                 /* crystal style */
-    outline: 1px solid #fff;   
-} */
-
-/* button:active {                /* crystal click */
-    transform: scale(0.75);
-} */
-
-/* #endScreen{                    /* for end screen styles */
-    position: absolute;
-    z-index: 101;
-    width: 500px;
-    height: 400px;
-    background-color: rgba(181,22,186,0.7);
-    margin-left: 300px;    
-} */
-
-/* #endScreenContent{             /* end screen content style */
-    width: 400px;
-    height: 200px;
-    padding: 20px;    
-    margin: 60px;
-    text-align: center;
-} */
-
-/* #endScreen h2{                /* end screen top text */
-    color: white;
-    font-size: 28px;
-} */
-
-/* #endScreen h3{                 /* end screen bottom text */
-    color: white;
-    font-size: 22px;
-} */
-
-/* #btnReplay{                    /* replay button styles */
-    display: inline-block;
-    border: none;       
-    background-color: #791099;  
-    color: white;
-}  */
+.buttonSubmit:active {
+    background-color: #075906;
+    box-shadow: 0 5px rgb(12, 204, 115);
+    transform: translateY(4px);   
+    outline: none;
+  }

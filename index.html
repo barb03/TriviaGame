@@ -1,63 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />    
-        <title>Trivia Game</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8">    
+    <title>Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
         <!-- Custom CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">   
+        <link rel="stylesheet" href="assets/css/style.css">
         <!-- Fancy Font -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Source+Code+Pro" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Spicy+Rice" rel="stylesheet">
         <!-- Favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico" />
-        
-       
-    </head>
-    <body>    
-        <div class="container">                
-            <div class="jumbotron">
-                <!-- <h1>Trivia!!</h1>              -->
-                <img id="trivia" src="./assets/images/trivia.png" alt="trivia">
-            </div>  <!--end jumbotron--> 
+        <!--  jQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>    
+</head>
 
-            <!-- <div id="endScreen">
-                <div id="endScreenContent">
-                    <h2 id="txtEndTitle">Title</h1>
-                    <h3 id="txtEndMessage">Message</h2>
-                    <button id="btnReplay" >Play Again</button>                   
-                </div>
-            </div> -->
+<body>
+    <div id="startScreen">
+        <div class="start">            
+            <img id="trivia" src="./assets/images/trivia.png" alt="trivia">            
+            <p>You have 90 seconds to answer 10 questions.</p>
+            <br />            
+            <button type="button" id="startBtn" class="buttonSubmit">Start</button>
             
-            <div class="row">
-                <div class="col-md-12">
-                    <p>How to play</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores, molestiae recusandae unde vel culpa sequi 
-                        corporis quaerat autem nulla necessitatibus minus, neque adipisci fugiat numquam beatae reiciendis 
-                        iure temporibus eos.
-                    </p>
-                </div> <!--end div how to play-->              
-            </div> <!--end first row-->   
-            
-            <div class="row">
-                <div class="col-md-12">
-                    <p>Questions will go here.</p>                    
-                </div> <!--end div questions-->                             
-            </div>  <!-- end questions row -->              
-            
-            <div class="row">                
-                    <div class="col-md-12">
-                        <p id="wins">Wins: 0</p>
-                        <p id="losses">Losses: 0</p>
-                    </div> <!--end wins-->
-                </div> <!--end match number-->          
-            
-    
-        </div>  <!--end container-->
+        </div>
+    </div>
 
-        <script src="assets/javascript/game.js"></script>
+    <div id="answerScreen">
+        <div class=answerBox">
+            <h2>Graded Quiz</h2>
+            <hr />
+            <p id="correctScreen">Correct Answers: </p>
+            <p id="wrongScreen">Wrong Answers: </p>
+        </div>
+    </div>
 
-    </body>   <!--end of body-->
 
-</html>  <!--end of html-->
+    <div id="timesUp">
+        <div class="wrongBox">
+            <h2 class="up">Time Ran Out!</h2>
+            <hr />
+            <p>Graded Quiz</p>
+            <p id="correctTimesUp">Correct Answers: </p>
+            <p id="wrongTimesUp">Wrong Answers: </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>Trivia Questions!</header>  
+        <div class="clock">Time Remaining:
+            <div id="timeRemain">90</div>
+        </div>
+
+        <div class="questions">          
+        </div> <!-- end questions-->
+        <button type="button" id="submitQuiz" class="buttonSubmit" >Submit</button>
+
+        <!-- Main Container-->
+    </div>
+    <script src="assets/javascript/game.js "></script>
+</body>
+
+</html>
