@@ -75,7 +75,7 @@ var labels = ["one", "two", "three", "four"];
 var startGame = $("#startBtn").on("click", function() {
     $(this).parent().hide();
     $(".container").show();
-    countdown(10);
+    countdown(30);
     questionDisplay();
 });  //end function startGame
 
