@@ -103,12 +103,10 @@ var countdown = function(seconds) {
             var wrongAnswers = 0;       
             for (var i = 0; i < 10; i++) {
                 if ($('input:radio[name="' + questions[i].name + '"]:checked').val() === questions[i].correct) {
-                    correctAnswers++;
-                    console.log("this is correct! number:" + i)
+                    correctAnswers++;                    
                 } //end if
                 else {
-                    wrongAnswers++;
-                    console.log("this is wrong! number:" + i)
+                    wrongAnswers++;                    
                 };  //end else
             }  //end for
             $("#correctTimesUp").append(correctAnswers);            
