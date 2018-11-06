@@ -10,6 +10,13 @@ img{
     height: auto;
     margin-left: -20px;
     overflow: hidden;
+    mix-blend-mode: multiply;
+}
+
+#clock{
+    width: 200px;
+    height: auto;
+    margin-left: -10px;
 }
 
 #startScreen {
@@ -29,10 +36,10 @@ img{
     border-color: rgb(3, 138, 10);
 }
 
-.wrongBox {
+.timeBox {
     margin: 0 auto;
     text-align: center;
-    padding: 2%;    
+    padding: 2%;       
 }
 
 #answerScreen {
