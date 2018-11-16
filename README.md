@@ -1,4 +1,7 @@
 # TriviaGame
+View page [Here]( https://barb03.github.io/TriviaGame/)
+
+This is an assignment done for UT Coding Boot Camp Week 5.
 Overview
 
 In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
@@ -14,5 +17,12 @@ You'll create a trivia form with multiple choice or true/false options (your cho
 
 On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
 
+Game instructions:
 
-The game has questions from different subjects and you have 30 seconds to answer 10 questions.  
+ The game has questions from different subjects and you have 30 seconds to answer 10 questions.  
+
+Built With:
+
+ HTML, CSS and javascript
+ 
+ 
